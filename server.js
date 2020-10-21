@@ -15,3 +15,7 @@ app.use(express.json());
 app.get("/notes", function(req, res) {
     res.sendFile(path.join(__dirname, "nodes.html"));
 });
+
+app.get("/", function(req, res) {
+    res.sendFile(path.join(__dirname, "index.html"));
+});
